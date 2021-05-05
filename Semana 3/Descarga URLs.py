@@ -51,6 +51,8 @@ button.click()
 data = {}
 df = pd.DataFrame(columns=['Links'])
 
+time.sleep(35)
+
 ids = driver.find_elements_by_css_selector('.mime_doc') #Definición de elemento para descarga
 for ii in ids:
     data['Links'] = ii.get_attribute('href')
