@@ -37,7 +37,7 @@ def get_data(url):
             "/html/body/div[2]/div[2]/div/div/div/div[3]/table/tbody/tr[" + str(r) + "]/td[4]").text
         df1 = df1.append(data, ignore_index=True)
         print(df1)
-    df1.to_csv('Hechos esenciales - Adm. Cartera')
+    df1.to_csv('Hechos esenciales - Valores Extranjeros')
 
 
 get_data('')
