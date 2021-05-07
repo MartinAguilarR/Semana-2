@@ -34,12 +34,12 @@ barra1.send_keys(Keys.RETURN)
 
 # fecha de inicio
 barra2 = driver.find_element_by_name("p_fecha_desde")
-barra2.send_keys("01/03/2017")
+barra2.send_keys("01/03/2012")
 barra2.send_keys(Keys.RETURN)
 
 # hasta esta fecha
 barra3 = driver.find_element_by_name("p_fecha_hasta")
-barra3.send_keys("01/03/2021")
+barra3.send_keys("01/03/2016")
 barra3.send_keys(Keys.RETURN)
 
 # tiempo para llenar el captcha
@@ -58,4 +58,4 @@ for ii in ids:
     data['Links'] = ii.get_attribute('href')
     df = df.append(data, ignore_index=True)
     print(df)
-df.to_csv('Hechos 2017 - 2021_links')
+df.to_csv('Hechos 2012 - 2016_links')

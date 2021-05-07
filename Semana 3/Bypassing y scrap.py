@@ -29,12 +29,12 @@ barra1.send_keys(Keys.RETURN)
 
 # fecha de inicio
 barra2 = driver.find_element_by_name("p_fecha_desde")
-barra2.send_keys("01/03/2017")
+barra2.send_keys("01/03/2012")
 barra2.send_keys(Keys.RETURN)
 
 # hasta esta fecha
 barra3 = driver.find_element_by_name("p_fecha_hasta")
-barra3.send_keys("01/03/2021")
+barra3.send_keys("01/03/2016")
 barra3.send_keys(Keys.RETURN)
 
 # tiempo para llenar el captcha
@@ -66,4 +66,4 @@ for r in range(2, rows + 1):
         "/html/body/div[2]/div[2]/div/div/div/div[3]/table/tbody/tr[" + str(r) + "]/td[4]").text
     df1 = df1.append(data, ignore_index=True)
     print(df1)
-df1.to_csv('Hechos 2017 - 2021')
+df1.to_csv('Hechos 2010 - 2016')
